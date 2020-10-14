@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /*
 
     Para que el programa decodifique no hace falta
@@ -22,12 +23,12 @@ int main(int argc, char const *argv[]) {
         return;
 
     int code = atoi(argv[1]);
-
+    
     while ( (temp = getchar()) != NULL) {
         printf("%c", temp ^ code);
     }
 
     printf("\0");
-
+    
     return 0;
 }

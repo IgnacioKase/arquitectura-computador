@@ -28,6 +28,6 @@ int main(int argc, char const *argv[]) {
     }
 
     printf("\0");
-
+    
     return 0;
 }

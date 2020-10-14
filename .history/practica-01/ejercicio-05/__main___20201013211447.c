@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /*
 
     Para que el programa decodifique no hace falta
@@ -9,7 +10,7 @@
 
     Si volvemos a codificar la string resultado 
     (con un código distinto al original claro esta)
-    podremos lograr más niveles de encriptación. Ya que
+    podremos lograr más niveles de "encriptación". Ya que
     tendremos que decodificar en orden inverso la string final
     con los códigos utilizados.
 
@@ -22,12 +23,12 @@ int main(int argc, char const *argv[]) {
         return;
 
     int code = atoi(argv[1]);
-
+    
     while ( (temp = getchar()) != NULL) {
-        printf("%c", temp ^ code);
+        printf("%c", (temp ^ code) ^ code);
     }
 
     printf("\0");
-
+    
     return 0;
 }
