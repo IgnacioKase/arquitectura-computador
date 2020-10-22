@@ -1,0 +1,5 @@
+Para obtener el código de salida de un programa podemos realizar los siguientes dos métodos:
+
+1 - Ejecutar el programa y luego ejecutar "echo $?". Esto nos devolverá el último codigo de salida obtenido.
+
+2 - Otra forma de obtener el código de salida es usando gdb y ejecutar el comando run, al terminar la ejecución, podremos ver el código de salida. (en base 8)

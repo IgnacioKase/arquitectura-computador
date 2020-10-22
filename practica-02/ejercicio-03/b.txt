@@ -1,0 +1,2 @@
+No podemos usar en este caso el valor de retorno, por lo que el uso de gdb es necesario.
+(El retorno admite valores de hasta 2 Bytes, al estar haciendo operaciones con 4 Bytes este retorno no nos alcanza).
